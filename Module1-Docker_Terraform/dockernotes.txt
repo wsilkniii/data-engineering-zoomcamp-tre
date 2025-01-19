@@ -1,0 +1,42 @@
+docker run --help
+
+Usage: docker run [OPTIONS] IMAGE [COMMAND] [ARG...]
+
+Create and run a new container from an image
+
+Options:
+      --add-host value             Add a custom host-to-IP mapping (host:ip) (default [])
+  -a, --attach value               Attach to STDIN, STDOUT or STDERR (default [])
+<...>
+
+
+DOCKER_API_VERSION	Override the negotiated API version to use for debugging (e.g. 1.19)
+DOCKER_CERT_PATH	Location of your authentication keys. This variable is used both by the docker CLI and the dockerd daemon
+DOCKER_CONFIG	The location of your client configuration files.
+DOCKER_CONTENT_TRUST_SERVER	The URL of the Notary server to use. Defaults to the same URL as the registry.
+DOCKER_CONTENT_TRUST	When set Docker uses notary to sign and verify images. Equates to --disable-content-trust=false for build, create, pull, push, run.
+DOCKER_CONTEXT	Name of the docker context to use (overrides DOCKER_HOST env var and default context set with docker context use)
+DOCKER_CUSTOM_HEADERS	(Experimental) Configure custom HTTP headers to be sent by the client. Headers must be provided as a comma-separated list of name=value pairs. This is the equivalent to the HttpHeaders field in the configuration file.
+DOCKER_DEFAULT_PLATFORM	Default platform for commands that take the --platform flag.
+DOCKER_HIDE_LEGACY_COMMANDS	When set, Docker hides "legacy" top-level commands (such as docker rm, and docker pull) in docker help output, and only Management commands per object-type (e.g., docker container) are printed. This may become the default in a future release.
+DOCKER_HOST	Daemon socket to connect to.
+DOCKER_TLS	Enable TLS for connections made by the docker CLI (equivalent of the --tls command-line option). Set to a non-empty value to enable TLS. Note that TLS is enabled automatically if any of the other TLS options are set.
+DOCKER_TLS_VERIFY	When set Docker uses TLS and verifies the remote. This variable is used both by the docker CLI and the dockerd daemon
+BUILDKIT_PROGRESS	Set type of progress output (auto, plain, tty, rawjson) when building with BuildKit backend. Use plain to show container output (default auto).
+
+HTTP_PROXY	Proxy URL for HTTP requests unless overridden by NoProxy.
+HTTPS_PROXY	Proxy URL for HTTPS requests unless overridden by NoProxy.
+NO_PROXY	Comma-separated values specifying hosts that should be excluded from proxying.
+
+configFormat	Custom default format for docker config ls output. See docker config ls for a list of supported formatting directives.
+imagesFormat	Custom default format for docker images / docker image ls output. See docker images for a list of supported formatting directives.
+networksFormat	Custom default format for docker network ls output. See docker network ls for a list of supported formatting directives.
+nodesFormat	Custom default format for docker node ls output. See docker node ls for a list of supported formatting directives.
+pluginsFormat	Custom default format for docker plugin ls output. See docker plugin ls for a list of supported formatting directives.
+psFormat	Custom default format for docker ps / docker container ps output. See docker ps for a list of supported formatting directives.
+secretFormat	Custom default format for docker secret ls output. See docker secret ls for a list of supported formatting directives.
+serviceInspectFormat	Custom default format for docker service inspect output. See docker service inspect for a list of supported formatting directives.
+servicesFormat	Custom default format for docker service ls output. See docker service ls for a list of supported formatting directives.
+statsFormat	Custom default format for docker stats output. See docker stats for a list of supported formatting directives.
+tasksFormat	Custom default format for docker stack ps output. See docker stack ps for a list of supported formatting directives.
+volumesFormat	Custom default format for docker volume ls output. See docker volume ls for a list of supported formatting directives.
